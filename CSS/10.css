@@ -1,0 +1,132 @@
+
+h1 {
+	color: darkred;
+
+	}
+
+h2 {
+	color: darkred;
+	}
+
+#menu {
+	background-color: #8f5cbf;
+	text-align: center;
+	padding: 30px;
+	margin: 0px;
+	}
+
+nav {
+	background-color: darkblue;
+	overflow: hidden;
+}
+
+nav a {
+	background-color: darkblue;
+	color: white;
+	padding: 14px 20px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav a.menu_left {
+	float: left;
+}
+nav a.menu_right {
+	float: right;
+}
+
+nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+#left_side {
+	flex: 30%;
+	background-color: #f1f1f1;
+	padding: 10px 20px;
+}
+#right_side {
+	flex: 70%;
+	padding: 10px 20px;
+
+}
+#flex_container {
+	display: flex;
+}
+#course_container{
+	flex: 30%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.imge{
+	height: 50%;
+	width: 90%;
+}
+.course_items{
+	flex: 33%;
+	text-align: center;
+}
+.title{
+	font-weight: bold;
+	font-size: 150%;
+}
+.detail{
+ 	width: 90%;
+	word-wrap: break-word;
+	display: inline-block;
+	text-align: center;
+	
+}
+footer {
+	background-color: darkblue;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+}
+footer > a{
+	color: white;}
+
+table {
+	border: solid;
+}
+
+/* Styling the table */
+table {
+  border-collapse: collapse;
+  width: 80%;
+
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 2px;
+  text-align: center;
+  margin: 0px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+@media(max-width: 800px){
+	#left_side{
+		flex: 100%;
+	}
+	#right_side{
+		flex: 100%;
+	}
+	#flex_container{
+		flex-wrap: wrap;
+	}
+	.course_items {
+		flex: 50%;
+	}
